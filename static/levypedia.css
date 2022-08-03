@@ -1,0 +1,397 @@
+
+/*Colors I am using in order of lightest to darkest
+#4B385E
+#007F94
+#EED78D
+#C22B26
+#FFB632
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');*/
+
+body { 
+  /*background:linear-gradient(90deg,#4B385E 20%,#007F94 20%,#007F94 40%, #EED78D 40%,#EED78D 60%,#C22B26 60%,#C22B26 80%,#FFB632 80%); */
+  /*background-image:url("vintagebackground.jpeg");*/
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;*/
+  margin: 15px;
+  background-color: black;
+
+  font-family: 'Playfair Display', serif;
+  font-family: 'Gentium Basic', serif;  
+  word-wrap: normal;
+  
+
+
+}
+p{
+animation: color-change 12s infinite;
+
+}
+h1 {
+
+font-family: 'Gentium Basic', serif;
+font-size: 90px;
+color:whitesmoke;
+
+padding: 2px;
+margin-top: 0px;
+background-repeat: no-repeat;
+background-size: cover;
+/*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: color-change 12s ease infinite;*/
+background-color:black;
+
+}
+p,h2{
+padding: 2px;
+font-family: 'Playfair Display', serif;
+margin: 20px;
+font-weight: 600px;
+animation: color-change 12s ease infinite;
+font: 20px Arial, sans-serif;
+margin-right:250px;
+}
+h7{
+font-family:'fantasy';
+margin-left:20px;
+font-weight:150px;
+color:lightseagreen;
+font:18px;
+float:none;
+
+
+}
+
+h3{
+  padding: 2px;
+  font-family: 'Playfair Display', serif;
+  margin: 10px;
+  font-weight: 600px;
+  animation: color-change 12s ease infinite;
+  font: 20px Arial, sans-serif;
+  overflow: auto;
+}
+h5 {
+float:inline-end;
+
+
+}
+/* For background opacity*/
+
+a {
+text-decoration-color:violet 2px;
+text-decoration:underline;
+color:white;
+text-shadow:white;
+padding:1px;
+overflow: auto;
+}
+
+/* Layout for divisions containing images and their captions */
+#picture {
+padding: 1px;
+float: right;
+text-align: center;
+font-size: 8pt;
+margin: 0 0 1em 1em;
+margin-top: 90px;
+display:block;
+}
+#playlist {
+padding: 1px;
+text-align:inherit;
+font: rgb(255, 0, 221);
+
+}
+.menu {
+background-color: none;
+border: rgb(248, 248, 248) 10px;
+padding:auto;
+overflow:auto;
+color:lightblue;
+}
+.menu a {
+  float:left;
+  color:#f2f2f2;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+ font-size:17px;
+
+}
+.menu a:hover {
+  background-color:#ddd;
+  color: black;
+
+}
+.menu a:active {
+background-color: floralwhite;  
+color:chocolate;
+}
+
+.input[type=text]:focus {
+background-color: lightblue;
+}
+
+ul {
+font: size 15px;
+color:floralwhite;
+padding:1px;
+
+}
+u{
+font: size 15px;
+color:#ffffff;
+padding:1px;
+background-color:floralwhite;
+}
+/* Colors for linked text, before and after being clicked */	
+a{
+font:white;
+color:white;
+}		
+a:link {
+color:white;
+}
+
+a:visited {
+color: white;
+}
+a:hover {
+color:#5900ff;
+}
+
+
+.button4 {border-radius: 12px;}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  
+  color:rgb(0, 0, 0);
+  
+  background-color: inherit;
+}
+/* Layout for alignment of footer */
+
+#footer {
+
+text-align: bottom left;
+color:lightseagreen;
+float:inline-end;
+}
+
+
+#footer img {
+padding: 5px;
+margin-left:auto;
+}
+
+
+
+
+
+/* Shutter Out Vertical */
+.hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  position: relative;
+  
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+  color: white;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+@keyframes color-change {
+0% {
+  color: #ee7752;
+}
+50% {
+  color:#e73c7e;
+}
+100% {
+  color: #23d5ab;
+}
+}
+
+
+/* Parallax*/
+.parallax { 
+  /* The image used */
+  background-image: url("MarylandHeights.jpg"); 
+
+  /* Set a specific height */
+  
+ min-height: 200px;
+ min-width:200px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.x {
+font-family: 'MedievalSharp';
+font-size: 15px;
+}
+.graytext{ 
+color: black;
+display:inline-block;
+line-height:10px;
+width:fit-content;
+overflow:visible;
+}
+
+.graytext:hover {
+color:#5900ff;
+}
+
+div {
+width:fit-content;
+color: black;
+}
+/*Slideshow container*/
+
+* {box-sizing:border-box};
+.slideshow-container { 
+max-width:45%;
+position:relative;
+margin:auto;
+}
+
+/*Hide the Images by default*/
+
+.mySlides {
+display:none;
+}
+
+/* Next and Previous Buttons*/
+.prev, .next {
+cursor:pointer;
+position:absolute;
+top:50%;
+width:auto;
+margin-top:-22px;
+padding:16px;
+color:white;
+font-weight:bold;
+font-size:18px;
+transition:0.6s ease-in-out;
+Border-radius: 0 3px 3px 0;
+user-select:none;
+}
+
+/*Position the "next button" to the right*/
+.next{
+right:0;
+border-radius: 3px 0 0 3px;
+}
+/* ON hover, add a black background color with a little bit of transparency*/
+.next:hover, .prev:hover{
+background-color:rgba(0,0,0,0.8)
+}
+
+/*Caption text*/
+.text{
+color:#f2f2f2;
+font-size:15px;
+padding:8px 15px;
+width:100%;
+text-align:center;
+}
+
+/* Number of picture (1/3)*/
+.numbertext {
+color:#f2f2f2;
+font-size:12px;
+padding:8px 12px;
+position:absolute;
+top:0;
+}
+
+.dot{
+cursor: pointer;
+height:15px;
+margin: 20%;
+position: relative;
+background-color:#bbb;
+border-radius: 50%;
+display:inline-block;
+transition:background-color 0.6s ease;
+}
+
+
+
+/*fading animation*/
+.fade {
+-webkit-animation-name:fade;
+-webkit-animation-duration:1.5s;
+animation-name:fade;
+animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade{
+from{opacity:.4}
+to{opacity:1}
+}
+
+@keyframes fade{
+from{opacity:0.4}
+to{opacity:1}
+}
+
+center{
+color:black;
+}

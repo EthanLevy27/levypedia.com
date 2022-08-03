@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title id="uu">
+       
+     Ethan Levy
+     
+    </title>
+
+    <head class="graytext">
+      
+        <p class="hover graytext"> <center> &Epsilon; &Tau; &Lambda; </center> </p>
+
+            <div id="picture" >
+                <img src="static/Profile-Picture.jpeg"  height=500><br>
+                Picture of ...
+                
+            </div>
+      
+        <link rel="stylesheet" href="static/levypedia.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="static/playlist.js"></script>
+        <script src="/static/slideshow/slideshow.js"></script> 
+        <script src="static/playlist_store.js"></script>    
+        <meta charset = "utf-8">
+
+    </head>
+
+    <body>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Playfair+Display&display=swap');
+            a:link {color: rgb(131, 175, 204);}  
+            a:visited {color:rgb(233, 128, 128)}  
+            a:hover {color: #56cf9d}  
+            a:active {color: #56cf9d}  
+            
+        </style>  
+
+        <h5>
+            <div class="menu" class="visited" class = "hover" class = "hvr-shutter-out-vertical" class = "active">
+                <a class="active" href="/home">Home</a>
+                <a href="https://linktr.ee/elevy127">Linktree</a>
+                <a href="https://github.com/EthanLevy27/EthanLevy27">My Projects</a>
+                <a href="backpacking_photos">Backpacking Photos</a>
+                <a href="https://open.spotify.com/user/31hwz3cts3bb75z6exor3bglmcbi">Spotify</a>
+                <a href="https://letterboxd.com/puckerupjules/">Letterboxd</a>
+                <a href="">Resume</a>
+                <a href="">Contact</a>
+      
+            </div>
+
+        </h5>
+
+
+        <h1>  Ethan Levy 
+            
+        <h2> 
+        
+                
+         Hello! I'm Ethan. I am a physics undergraduate at the University of Maryland College Park. I love math, physics, logic and math riddles, and philosophy. <a href="static/riddles_list.html">Here</a> is a list of riddles that I have attempted.
+         <br></br>In my free time, I go backpacking and camping. Notable places include Thunder Bay, Appalachia, Cimarron, Baxter SP, and Hawaii Volcano NP on the Big Island.
+         <br></br>I also travel to organic, sustainable, regenerative farms to learn about healthy agriculture techniques and practices that will one day be used to adapt farming to global warming and overpopulation. <a href="https://wwoof.net">WWOOF</a> has swept me away to Mayaguez, PR and Westport, CA. 
+
+         <br></br>
+         This personal project allowed me to dive into the 7th layer of hell: html. I am also proficient in Python and in the markdown language Latex. In the future, I plan on learning Ruby and Javascript. <br>
+        </br> 
+        Spring of 2022, I studied abroad in Florence, Italy. Here, I learned Italian and traveled all over Italy to experience as much of the charming culture, food, and language as I possibly could.
+        Currently, I am conducting theoretical reasearch on supersymmetry and supersymmetric transformations with Dr. S. James Gates.
+
+        </h2>
+            <p> 
+                <!-- <a href="" class = "hvr-shutter-out-vertical">Add to Basket</a> -->
+            </p>
+        
+        
+   </body>
+    
+    
+    <div id="footer">
+        What have you been listening to? Let me know below! &darr; 
+        <form id="input"> 
+            <style>
+                input[type=text]:focus {
+                 background-color: lightblue;
+                 border-color:pink;
+                 border-style:double;
+                }
+            </style>
+            <input type="text" id="songTextInput" size="auto" placeholder="Song name">
+            <input type="button" class="focus" id="addButton" value ="Add Song" onclick="writeToServer($('#songTextInput').value)">    
+        </form>
+        <ul id="playlist"></ul>
+    </div>
+
+    
+    <h5 class="graytext" class = "hover">
+        'Tis but a Scratch! <br></br> Last edited: 8 January 2022
+    </h5>
+    
+    
+</html>
