@@ -50,6 +50,7 @@ background-color:black;
 p,h2{
 padding: 2px;
 font-family: 'Playfair Display', serif;
+font-size: x-large;
 margin: 20px;
 font-weight: 600px;
 animation: color-change 12s ease infinite;
@@ -76,6 +77,14 @@ h3{
   font: 20px Arial, sans-serif;
   overflow: auto;
 }
+
+h4{
+  float: inline-start;
+  animation: alternate 15s ease infinite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(127, 108, 193);
+
+}
 h5 {
 float:inline-end;
 
@@ -91,6 +100,16 @@ text-shadow:white;
 padding:1px;
 overflow: auto;
 }
+
+b {
+  text-decoration-color:violet 2px;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow:white;
+  padding:10px;
+  overflow: auto;
+  
+  }
 
 /* Layout for divisions containing images and their captions */
 #picture {
@@ -394,4 +413,54 @@ to{opacity:1}
 
 center{
 color:black;
+}
+
+
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  font-family: sans-serif;
+
+}
+
+li {
+  padding: 0.5em;
+  color: antiquewhite;
+  text-align: center;
+  display: grid;
+}
+
+
+.hover-text {
+  border: 1px solid rgb(133, 14, 14);
+  padding: 10px;
+  margin: 10px;
+  transition: 5s;
+}
+
+.hover-text span {
+  display: block;
+  transition:3s;
+  color: white
+}
+
+.hover-text:hover span {
+  display: none;
+}
+
+.hover-text span.hover-text-2 {
+  display: none;
+  transition: 5s;
+}
+
+.hover-text:hover span.hover-text-2 {
+  display: block;
+  transition: 3s;
+  color:rosybrown
 }

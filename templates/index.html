@@ -6,9 +6,10 @@
      
     </title>
 
-    <head class="graytext">
+    <head>
       
-        <p class="hover graytext"> <center> &Epsilon; &Tau; &Lambda; </center> </p>
+        <p> <center> &Epsilon; &Tau; &Lambda; </center> </p>
+
 
             <div id="picture" >
                 <img src="static/Profile-Picture.jpeg"  height=500><br>
@@ -58,15 +59,17 @@
         <h2> 
         
                 
-         Hello! I'm Ethan. I am a physics undergraduate at the University of Maryland College Park. I love math, physics, logic and math riddles, and philosophy. <a href="static/riddles_list.html">Here</a> is a list of riddles that I have attempted.
+         Hello! I'm Ethan. I am a physics undergraduate at the University of Maryland College Park. I love math, physics, logic and math riddles, and philosophy. <a href="/riddles_list">Here</a> is a list of riddles that I have attempted.
          <br></br>In my free time, I go backpacking and camping. Notable places include Thunder Bay, Appalachia, Cimarron, Baxter SP, and Hawaii Volcano NP on the Big Island.
          <br></br>I also travel to organic, sustainable, regenerative farms to learn about healthy agriculture techniques and practices that will one day be used to adapt farming to global warming and overpopulation. <a href="https://wwoof.net">WWOOF</a> has swept me away to Mayaguez, PR and Westport, CA. 
 
          <br></br>
-         This personal project allowed me to dive into the 7th layer of hell: html. I am also proficient in Python and in the markdown language Latex. In the future, I plan on learning Ruby and Javascript. <br>
+         This personal project allowed me to dive into the 7th layer of hell: html. I am also proficient in Python, Matlab, and in the markdown language Latex. In the future, I plan on learning Ruby and Javascript. <br>
         </br> 
-        Spring of 2022, I studied abroad in Florence, Italy. Here, I learned Italian and traveled all over Italy to experience as much of the charming culture, food, and language as I possibly could.
-        Currently, I am conducting theoretical <a href = "/static/CLS.pdf">research</a> on supersymmetry and supersymmetric transformations with Dr. S. James Gates.
+        Spring of 2022, I <a href="/study_abroad_photos">studied abroad</a> in Florence, Italy. Here, I reached conversational proficiency in Italian and traveled all over the country to experience as much of the charming culture, food, and language as I possibly could.
+        Currently, I am conducting theoretical <a href = "/static/CLS.pdf">research</a> on supersymmetry with <a href= "https://en.wikipedia.org/wiki/Sylvester_James_Gates">Dr. Sylvester James Gates Jr</a>. In addition, I am working on a project regarding population growth with <a href = "http://physics.umd.edu/~yakovenk/">Dr. Victor Yakovenko</a>. 
+        And finally, I am working on a project regarding topological photonics under <a href="https://hafezi.jqi.umd.edu/">Hafezi</a>'s group here at UMD. 
+
 
         </h2>
             <p> 
@@ -88,15 +91,30 @@
                 }
             </style>
             <input type="text" id="songTextInput" size="auto" placeholder="Song name">
-            <input type="button" class="focus" id="addButton" value ="Add Song" onclick="writeToServer($('#songTextInput').value)">    
+            <input type="button" class="focus" id="addButton" value ="Add Song" onclick="saveInput()">    
         </form>
+        <script>
+            function saveInput(){
+                
+                var userInput = document.getElementById("songTextInput").value;
+                
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST","save-song.php",true);
+                xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+                xhr.send("input="+ userInput);
+            }
+        </script>
         <ul id="playlist"></ul>
     </div>
+    <!--<a href="Books">
+        <img src="/static/nature_book.jpeg" alt="What am I listening to?">
 
+        </a>-->
     
     <h5 class="graytext" class = "hover">
-        'Tis but a Scratch! <br></br> Last edited: 05 August 2022
+        'Tis but a Scratch! <br></br> Last edited: 16 July 2023
     </h5>
-    
+    <h4>Current list of sponsers (scroll for more)</h4>
+
     
 </html>

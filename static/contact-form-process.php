@@ -49,7 +49,7 @@ if (isset($_POST['Email'])) {
     }
 
     if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.
+        $error_message .= 'The Message you entered does not appear to be valid.
 <br>';
     }
 
@@ -80,5 +80,5 @@ if (isset($_POST['Email'])) {
     Thank you for contacting me. We will be in touch with you very soon.
 
 <?php
-}
+}Thank you for contacting me. We will be in touch with you very soon.
 ?>

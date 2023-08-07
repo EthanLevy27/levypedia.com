@@ -13,7 +13,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 401px;
+  max-width: 501px;
   
   position: relative;
   margin: auto;
@@ -101,7 +101,7 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 11px}
 }
 .slideshow-container {
@@ -134,15 +134,15 @@ img {vertical-align: middle;}
     <a href="https://open.spotify.com/user/31hwz3cts3bb75z6exor3bglmcbi">Spotify</a>
     <a href="https://letterboxd.com/puckerupjules/">Letterboxd</a>
     <a href="">Resume</a>
-    <a href="">Contact</a>
+    <a href="contact_form">Contact</a>
         
   </div>
 <div class="slideshow-container">
   <div class="picture-and-contents">
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="/static/contemplation.jpg" style="max-width: 400px;
-    max-height: 300px;
+    <img src="/static/carousel/contemplation.jpg" style="max-width: 500px;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -152,8 +152,8 @@ img {vertical-align: middle;}
 
   <div class="mySlides fade vertical-center">
     <div class="numbertext">2 / 3</div>
-    <img src="/static/Handstand.jpg" style="max-width: 400px;
-    max-height: 300px;
+    <img src="/static/carousel/Handstand.jpg" style="max-width: 500px;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -163,14 +163,27 @@ img {vertical-align: middle;}
 
   <div class="mySlides fade vertical-center">
     <div class="numbertext">3 / 3</div>
-    <img src="/static/RockJump.JPG" style="max-width: 400px;
-    max-height: 300px;
+    <img src="/static/carousel/RockJump.JPG" style="max-width: 500px;
+    max-height: 400px;
     display: flex;
     justify-content: center;
     margin-left:auto;
     margin-right: auto;">
     <div class="text">Big Island Cliff Jump</div>
   </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="/static/carousel/dollygandolf.JPG" style="max-width: 500px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;">
+    <div class="text">Dolly Sods 2023</div>
+  </div>
+
+
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -179,6 +192,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+
 </div>
 </div>
 <br>

@@ -29,17 +29,29 @@ def backpacking_photos():
 def contact_form():
     return render_template('contact-form.html')
 
+@app.route("/study_abroad_photos")
+def study_abroad_photos():
+    return render_template('study_abroad_photos.html')
+
+@app.route("/Books")
+def Books():
+    return render_template('Books.html')
+
 
 @app.route("/Resume")
 def Resume():
     return render_template('Resume.html')
 
+@app.route("/riddles_list")
+def riddles_list():
+    return render_template('riddles_list.html')
 
 
 @app.route("/")
 def home():
     url_for('static', filename='playlist_store.js')
     url_for('static', filename='playlist.js')
+    #url_for('static', filename='.js')
     url_for('static', filename='contact-form-process.php')
     url_for('static', filename='style.css')
     url_for('static', filename='levypedia.css')
@@ -50,5 +62,9 @@ def home():
     url_for('static', filename='CLS.pdf')
     url_for('static', filename='contact-form.css')
     url_for('static', filename='contact-form.html')
+    url_for('static', filename='riddles_list.html')
+    url_for('static', filename='study_abroad_photos.html')
+
+
     
     return render_template('index.html')
