@@ -64,6 +64,7 @@ def home():
     url_for('static', filename='contact-form.html')
     url_for('static', filename='riddles_list.html')
     url_for('static', filename='study_abroad_photos.html')
+    url_for('static', filename='Books.html')
 
 
     
